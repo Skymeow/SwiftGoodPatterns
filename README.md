@@ -29,7 +29,27 @@ and it's good to name the struct private so we won't get a redeclaration error i
 
 ```
 we make a extension of Selector class, and since action argument expects a Selector object, we can just call the instance of the Selector extension.
+
 ```
+
+### NSFetchedResultsController:
+
+```
+var fetchedResultsController: NSFetchedResultsController<Object> = NSFetchedResultsController()
+let selectedObject =
+        fetchedResultsController.object(at: indexPath)
+```
+
+### Coredata editing and saving child context:
+
+```
+let childContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+      childContext.parent = coreDataStack.mainContext
+      
+      let childEntry = childContext.object(with: selectedManagedObject.objectID) as! ManagedObject
+```
+
+#### Important: need to pass both managedObject and ManagedObjectContext, so it won't be removed from ARC
 
 
 
