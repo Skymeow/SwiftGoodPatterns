@@ -1,4 +1,4 @@
-# SwiftGoodPatterns
+### SwiftGoodPatterns
 
 ## **Selector:**
 
@@ -50,19 +50,40 @@ let childContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrency
 
 #### Important: need to pass both managedObject and ManagedObjectContext, so it won't be removed from ARC
 
-### Navigation bar 
+### Navigation bar
 
 choose this:
 
 ```
- self.navigationController?.navigationBar.isHidden = false 
+ self.navigationController?.navigationBar.isHidden = false
 ```
 
-over this: 
+over this:
 
 ```
-self.navigationController?.isNavigationBarHidden = false 
+self.navigationController?.isNavigationBarHidden = false
 ```
+
+### Cell update imgs different each time scrolling when connection is slow bugs:
+
+```
+override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+    let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCellIdentifier", for: indexPath)
+        
+    if indexPath.row % 2 == 0 {
+        cell.imageView?.image = UIImage(named: "\(indexPath.row)")
+        cell.textLabel?.text = nil
+    } else {
+        cell.imageView?.image = nil
+        cell.textLabel?.text = "\(indexPath.row)"
+    }
+        
+    return cell
+}
+```
+
+#### why? :following the rule to always assign all properties all the time!  we assign nil, if the text or the image shouldn’t be displayed
 
 
 
