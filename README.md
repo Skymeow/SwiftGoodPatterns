@@ -186,6 +186,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         return ture
 }
 ```
+Debugging technics:
 
-
+ e let d = data[0] as! [Any]; let a = d[0] as! [String: Any]; print(a["id"])
+Optional(testRoom1)
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChooseDesinationViewController: UIViewController {
+class ChooseDestinationViewController: UIViewController {
 
     @IBOutlet weak var cityChoosenLabel: UILabel!
     
