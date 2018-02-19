@@ -85,8 +85,6 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 
 #### why? :following the rule to always assign all properties all the time!  we assign nil, if the text or the image shouldn’t be displayed
 
-
-
 ### For use basic auth header to authenticate:
 
 Helper folder \(BasicAuth.swift\)
@@ -102,7 +100,7 @@ struct BasicAuth {
         let loginData: Data = loginString.data(using: String.Encoding.utf8)!
         let base64LoginString = loginData.base64EncodedString(options: .init(rawValue: 0))
         let authHeaderString = "Basic \(base64LoginString)"
-        
+
         return authHeaderString
     }
 }
@@ -123,7 +121,7 @@ In header , call the basicAuth helper function above and only pass the encrypted
 ```
 guard let model = data as? User,
             let password = model.password else {return [:]}
-            
+
             let basicHeader = BasicAuth.generateBasicAuthHeader(username: model.email, password: password)
             return ["Authorization": basicHeader]
 ```
@@ -132,12 +130,12 @@ In login VC
 
 if click on loggedin button, set isLoggedIn key to be true, store basicAuth in keychain
 
-perform a get request to server and if success, set initial VC to be main 
+perform a get request to server and if success, set initial VC to be main
 
 ```
  let basicHeader = BasicAuth.generateBasicAuthHeader(username: username, password: password)
         keychain.set(basicHeader, forKey: "basicAuth")
-        
+
         defaults.set(true, forKey: "isLoggedIn")
         Networking.instance.fetch(route: Route.user, method: "GET", data: nil) { (data, code)  in
             print("hola")
@@ -147,7 +145,6 @@ perform a get request to server and if success, set initial VC to be main
                 self.view.window?.makeKeyAndVisible()
             }
         }
-
 ```
 
 In signUp button function
@@ -172,22 +169,75 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         let initialViewController: UIViewController
         let onboarded = defaults.bool(forKey: "saw_onboarding")
         let loggedIn = defaults.bool(forKey: "isLoggedIn")
-        
+
         if loggedIn && onboarded{
-            
+
             initialViewController = UIStoryboard.initialViewController(for: .main)
         } else {
             initialViewController = storyboard.instantiateViewController(withIdentifier: "pageVC") as! OnboardingPageViewController
         }
-        
+
         window?.rootViewController = initialViewController
         window?.makeKeyAndVisible()
-        
+
         return ture
 }
 ```
-Debugging technics:
 
- e let d = data[0] as! [Any]; let a = d[0] as! [String: Any]; print(a["id"])
-Optional(testRoom1)
+### Debugging technics:
+
+e let d = data\[0\] as! \[Any\]; let a = d\[0\] as! \[String: Any\]; print\(a\["id"\]\)
+
+### Programatically set embeded container view
+
+```
+class EmbedController {
+
+    public private(set) weak var rootViewController: UIViewController?
+
+    public private(set) var controllers = [UIViewController]()
+
+    init (rootViewController: UIViewController) {
+        self.rootViewController = rootViewController
+    }
+
+    func append(viewController: UIViewController) {
+        if let rootViewController = self.rootViewController {
+            controllers.append(viewController)
+            rootViewController.addChildViewController(viewController)
+            rootViewController.view.addSubview(viewController.view)
+        }
+    }
+
+    deinit {
+        if self.rootViewController != nil {
+            for controller in controllers {
+                controller.view.removeFromSuperview()
+                controller.removeFromParentViewController()
+            }
+            controllers.removeAll()
+            self.rootViewController = nil
+        }
+    }
+}
+
+```
+
+```
+class SampleViewController: UIViewController {
+    private var embedController: EmbedController?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        embedController = EmbedController(rootViewController: self)
+
+        let newViewController = ViewControllerWithButton()
+        newViewController.view.frame = CGRect(origin: CGPoint(x: 50, y: 150), size: CGSize(width: 200, height: 80))
+        newViewController.view.backgroundColor = .lightGray
+        embedController?.append(viewController: newViewController)
+    }
+}
+```
+
+
 
