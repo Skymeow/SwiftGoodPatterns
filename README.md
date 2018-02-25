@@ -220,7 +220,6 @@ class EmbedController {
         }
     }
 }
-
 ```
 
 ```
@@ -238,6 +237,12 @@ class SampleViewController: UIViewController {
     }
 }
 ```
+
+### Git add all untracked files:
+
+see untracked files: git ls-files -o --exclude-standard
+
+add untracked files: git add $\(git ls-files -o --exclude-standard\)
 
 
 
