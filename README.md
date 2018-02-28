@@ -246,3 +246,27 @@ add untracked files: git add $\(git ls-files -o --exclude-standard\)
 
 
 
+### How to identify and debug memory leak?
+
+1. If you write any code in that closure that refers to**`self.`**it is a potential memory leak.
+
+
+
+Solution: 
+
+#### 1. use **`[unowned self] or [weak self]`**`in closure`
+
+The difference between`unowned`and`weak`is that`weak`is declared as an Optional while`unowned`is not. By declaring it`weak, `you get to handle the case that it might be nil inside the closure at some point. If you try to access an`unowned`variable that happens to be nil, it will crash the whole program.
+
+#####  So only use**`unowned`**when you are positive that **variable will always be around while the closure is around**
+
+#### 2. use graph debugger
+
+The Xcode memory graph debugger helps to find and fix to retain cycles and leaked memory.
+
+![](/assets/debug memory leak.png)
+
+![](/assets/graph debug enable.png)
+
+![](/assets/debug panels.png)
+
