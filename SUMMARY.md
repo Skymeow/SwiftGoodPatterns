@@ -2,4 +2,5 @@
 
 * [Introduction](README.md)
 * [swift interview question](swift-interview-question.md)
+* [Xcode shortcut and others](xcode-shortcut-and-others.md)
 
