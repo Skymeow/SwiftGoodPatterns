@@ -270,5 +270,13 @@ The Xcode memory graph debugger helps to find and fix to retain cycles and leake
 
 ### \(put networking in here, so it would load new views everytime you revisit the view\)
 
+### multi threading:
+
+concurrency: all events happens asyncally, eg: DispatchQueue.global\(\).async
+
+seriesly: event happens one after each other.
+
+
+
 
 
