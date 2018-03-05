@@ -274,9 +274,9 @@ The Xcode memory graph debugger helps to find and fix to retain cycles and leake
 
 **concurrency**: all events happens asyncally, eg: DispatchQueue.global\(\).async
 
-**Multithreading** allows the processor to create concurrent _threads, _it can switch between, so multiple tasks can be executed at the same time.
+**Multithreading** allows the processor to create concurrent \_threads, \_it can switch between, so multiple tasks can be executed at the same time.
 
-**seriesly:** event happens one after each other.
+**serially:** event happens one after each other.
 
 **Grand Central Dispatch **is a wrapper around creating threads and managing that code, making sure that a number of tasks of variable importance and length are executed in a timeframe as reasonable as possible.
 
@@ -287,6 +287,15 @@ DispatchQueue.global(qos: .userInitiated).async {
     DispatchQueue.main.async {  
         // Update the UI  
     }
+}
+```
+
+**delaying a task**
+
+```
+let delay = DispatchTime.now() + .seconds(60)  
+DispatchQueue.main.asyncAfter(deadline: delay) {  
+    // Dodge this!  
 }
 ```
 
