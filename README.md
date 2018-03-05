@@ -276,11 +276,7 @@ The Xcode memory graph debugger helps to find and fix to retain cycles and leake
 
 eg: DispatchQueue.global\(\).async,
 
-
-
 **Multithreading** allows the processor to create concurrent \_threads, \_it can switch between, so multiple tasks can be executed at the same time.
-
-
 
 **custom serial queue:** event happens one after each other. A good choice when you **want to perform background work serially and track it**. This eliminates resource contention since you know only one task at a time is executing. Note that if you need the data from a method, you must inline another closure to retrieve it or consider using sync.
 
@@ -298,8 +294,7 @@ Dispatch synchronously onto the
 fileprivate let concurrentPhotoQueue =
   DispatchQueue(
     label: "com.raywenderlich.GooglyPuff.photoQueue", 
-    attributes: .concurrent) 
-    
+    attributes: .concurrent)
 ```
 
 ```
@@ -342,8 +337,6 @@ DispatchQueue.global(qos: .userInitiated).async {
     }
 }
 ```
-
-
 
 **delaying a task**
 
