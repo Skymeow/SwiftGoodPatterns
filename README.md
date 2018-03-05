@@ -276,9 +276,58 @@ The Xcode memory graph debugger helps to find and fix to retain cycles and leake
 
 eg: DispatchQueue.global\(\).async,
 
+
+
 **Multithreading** allows the processor to create concurrent \_threads, \_it can switch between, so multiple tasks can be executed at the same time.
 
-**serially:** event happens one after each other.
+
+
+**custom serial queue:** event happens one after each other. A good choice when you **want to perform background work serially and track it**. This eliminates resource contention since you know only one task at a time is executing. Note that if you need the data from a method, you must inline another closure to retrieve it or consider using sync.
+
+**How to create custom serial queue?**
+
+Dispatch synchronously onto the
+
+1. `concurrentPhotoQueue`
+   to perform the read.
+2. Store a copy of the photo array in
+   `photosCopy`
+   and return it.
+
+```
+fileprivate let concurrentPhotoQueue =
+  DispatchQueue(
+    label: "com.raywenderlich.GooglyPuff.photoQueue", 
+    attributes: .concurrent) 
+    
+```
+
+```
+var photos: [Photo] {
+  var photosCopy: [Photo]!
+  concurrentPhotoQueue.sync { // 1
+    photosCopy = self._photos // 2
+  }
+  return photosCopy
+}
+```
+
+! **Compare this with function using async:**
+
+You dispatch the write operation asynchronously with a barrier. When it executes, it will be the only item in your queue
+
+Then add the object to the array.
+
+```
+func addPhoto(_ photo: Photo) {
+  concurrentPhotoQueue.async(flags: .barrier) { // 1
+    self._photos.append(photo) // 2
+    DispatchQueue.main.async { // 3
+      self.postContentAddedNotification()
+    }
+  }
+}
+```
 
 **Grand Central Dispatch **is a wrapper around creating threads and managing that code, making sure that a number of tasks of variable importance and length are executed in a timeframe as reasonable as possible.
 
@@ -293,6 +342,8 @@ DispatchQueue.global(qos: .userInitiated).async {
     }
 }
 ```
+
+
 
 **delaying a task**
 
