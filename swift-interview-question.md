@@ -57,3 +57,9 @@ func swapValues<T> (_ a: inout T, _ b: inout T) {
 
 by calling swapValues\(&"sky", &"xu"\) you can swap values
 
+
+
+#### copying items into arr
+
+`Array(repeatElement(target, count: num))`
+
