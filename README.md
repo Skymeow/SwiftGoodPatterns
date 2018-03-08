@@ -258,6 +258,8 @@ The difference between`unowned`and`weak`is that`weak`is declared as an Optional 
 
 #### 2. use graph debugger
 
+[https://useyourloaf.com/blog/xcode-visual-memory-debugger/](https://useyourloaf.com/blog/xcode-visual-memory-debugger/)
+
 The Xcode memory graph debugger helps to find and fix to retain cycles and leaked memory.
 
 ![](/assets/debug memory leak.png)
@@ -345,6 +347,31 @@ let delay = DispatchTime.now() + .seconds(60)
 DispatchQueue.main.asyncAfter(deadline: delay) {  
     // Dodge this!  
 }
+```
+
+### create a realm object that can be used through out app in app delegate and connected to cloud
+
+```
+lazy var realm: Realm = {
+        var realm = try! Realm()
+        let serverURL = URL(string: "https://bmproject.us1a.cloud.realm.io/")!
+        let credentials = SyncCredentials.usernamePassword(username: "username", password: "password")
+        SyncUser.logIn(with: credentials,
+                       server: serverURL) { user, error in
+            if let user = user {
+                // can now open a synchronized Realm with this user
+                // true if the user is an administrator on the ROS instance
+                print("User is admin: \(user.isAdmin)")
+            } else if let error = error {
+                // show alert view
+            }
+            let config = Realm.Configuration(syncConfiguration: SyncConfiguration(user: user!, realmURL: serverURL))
+            // Open the remote Realm
+            realm = try! Realm(configuration: config)
+        }
+        
+        return realm
+    }()
 ```
 
 
