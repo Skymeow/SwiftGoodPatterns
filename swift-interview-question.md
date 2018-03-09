@@ -61,8 +61,6 @@ by calling swapValues\(&"sky", &"xu"\) you can swap values
 
 `Array(repeatElement(target, count: num))`
 
-
-
 ### Higher order functions\(map, filer, reduce\)
 
 if you want to** return values**, use them.
@@ -71,7 +69,7 @@ if you want to** return values**, use them.
 
 **to loop over a collection and apply the same operation to each element in the collection.**
 
-use it with a`Dictionary`or a`Set`, the **result will always be an`Array`**. Here is an example with a Dictionary:
+use it with a`Dictionary`or a`Set`, the **result will always be an**`Array`. Here is an example with a Dictionary:
 
 ```
 let squares3 = values.map({
@@ -104,7 +102,6 @@ method takes two values, an **initial value and a combine closure**.
 you can also write reduce using the trailing closure syntax:
 
 ```
-
 let names = ["alan","brian","charlie"]
 let csv = names.reduce("===") {text, name in "\(text),\(name)"}
 // "===,alan,brian,charlie"
@@ -123,6 +120,10 @@ let numbers = [20,17,35,4,12]
 let evenSquares = numbers.filter{$0 % 2 == 0}.map{$0 * $0}
 // [400, 16, 144]
 ```
+
+### Article about generics
+
+[https://krakendev.io/blog/generic-protocols-and-their-shortcomings](https://krakendev.io/blog/generic-protocols-and-their-shortcomings)
 
 
 
