@@ -369,7 +369,7 @@ lazy var realm: Realm = {
             // Open the remote Realm
             realm = try! Realm(configuration: config)
         }
-        
+
         return realm
     }()
 ```
