@@ -125,5 +125,22 @@ let evenSquares = numbers.filter{$0 % 2 == 0}.map{$0 * $0}
 
 [https://krakendev.io/blog/generic-protocols-and-their-shortcomings](https://krakendev.io/blog/generic-protocols-and-their-shortcomings)
 
+### Swift compare date
+
+```
+let date1 = Date()
+let date2 = Date().addingTimeInterval(100)
+
+if date1 == date2
+{
+}
+else if date1 > date2
+{
+}
+else if date1 < date2
+{
+}
+```
+
 
 
