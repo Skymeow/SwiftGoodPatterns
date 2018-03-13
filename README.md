@@ -66,6 +66,17 @@ self.navigationController?.isNavigationBarHidden = false
 
 ### Cell update imgs different each time scrolling when connection is slow bugs:
 
+[https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e](https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e)
+
+to cancle img request and set img to nil in a prepare cell func 
+
+```
+override func prepareForReuse() {
+    mainImageView.af_cancelImageRequest()
+    mainImageView.image = nil
+}
+```
+
 ```
 override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
