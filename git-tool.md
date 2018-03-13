@@ -1,3 +1,5 @@
+#### Go to this : [https://github.com/Product-College-Courses/Core-Git-Branching](https://www.gitbook.com/book/skymeow/swift-good-patterns1/edit#)!
+
 #### reset dev branch
 
 ```
@@ -16,9 +18,7 @@ git rebase --abort
 
 \(if you are on your branch\)
 
-##### git rebase dev 
-
-
+##### git rebase dev
 
 #### if you want to merge your branch into dev,
 
