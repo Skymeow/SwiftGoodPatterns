@@ -2,8 +2,6 @@
 
 ```
 git reset --hard origin/dev
-
-
 ```
 
 #### continue rebase:
@@ -14,11 +12,15 @@ git rebase --continue
 
 git rebase --abort
 
-if you are on your branch,
+#### putting my branch on top of dev branch
 
-git rebase dev is putting my branch on top of dev branch
+\(if you are on your branch\)
 
-#### if you want to merge your branch into dev, 
+##### git rebase dev 
+
+
+
+#### if you want to merge your branch into dev,
 
 ##### go to dev branch and do git merge your branch
 
