@@ -10,4 +10,5 @@
 * [Analytic in app and testing](analytic-in-app-and-testing.md)
 * [useful framework](useful-framework.md)
 * [git tool](git-tool.md)
+* [Full stack mobile rubric](full-stack-mobile-rubric.md)
 
