@@ -12,7 +12,15 @@
 
 ### Storyboard
 
-[https://www.raywenderlich.com/160519/storyboards-tutorial-ios-10-getting-started-part-2](https://www.raywenderlich.com/160519/storyboards-tutorial-ios-10-getting-started-part-2)
+### [https://www.raywenderlich.com/160519/storyboards-tutorial-ios-10-getting-started-part-2](https://www.raywenderlich.com/160519/storyboards-tutorial-ios-10-getting-started-part-2)
+
+### Sizeclasses
+
+[https://medium.com/@craiggrummitt/size-classes-in-interface-builder-in-xcode-8-74f20a541195](https://medium.com/@craiggrummitt/size-classes-in-interface-builder-in-xcode-8-74f20a541195)
+
+### App Architecture
+
+[https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b](https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b)
 
 
 
