@@ -68,7 +68,7 @@ self.navigationController?.isNavigationBarHidden = false
 
 [https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e](https://medium.com/ios-seminar/why-we-use-dequeuereusablecellwithidentifier-ce7fd97cde8e)
 
-to cancle img request and set img to nil in a prepare cell func 
+to cancle img request and set img to nil in a prepare cell func
 
 ```
 override func prepareForReuse() {
