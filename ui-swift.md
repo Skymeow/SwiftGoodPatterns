@@ -20,7 +20,9 @@
 
 ### App Architecture
 
-[https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b](https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b)
+MVVM: [https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b](https://medium.com/flawless-app-stories/how-to-use-a-model-view-viewmodel-architecture-for-ios-46963c67be1b)
 
+Coordinator: [https://will.townsend.io/2016/an-ios-coordinator-pattern](https://will.townsend.io/2016/an-ios-coordinator-pattern)
 
+mvp:  [http://iyadagha.com/using-mvp-ios-swift/](http://iyadagha.com/using-mvp-ios-swift/)
 
