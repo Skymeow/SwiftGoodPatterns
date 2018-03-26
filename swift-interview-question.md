@@ -144,5 +144,14 @@ else if date1 < date2
 }
 ```
 
+### Date
+
+```
+       let formatter = DateFormatter()
+//        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.timeZone = TimeZone(identifier: "UTC")
+//        let dateStr = formatter.string(from: date)
+```
+
 
 
