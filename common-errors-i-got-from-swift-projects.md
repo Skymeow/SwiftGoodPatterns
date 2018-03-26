@@ -2,7 +2,9 @@
 
 Solution: use`init`explicitly whenever you're initializing a generic parameter rather than a "real" type:
 
-  
-  
+### Alamofire
+
+https://stackoverflow.com/questions/27855319/post-request-with-a-simple-string-in-body-with-alamofire
+
 
 
