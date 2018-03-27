@@ -12,11 +12,15 @@ rails \(in the future switch to server\)
 
 youtube key
 
-https://console.developers.google.com/apis/credentials?project=stacked-199303
+[https://console.developers.google.com/apis/credentials?project=stacked-199303](https://console.developers.google.com/apis/credentials?project=stacked-199303)
 
 duration:
 
 `PT15M33S`
 
 indicates that the video is 15 minutes and 33 seconds long.
+
+api:
+
+https://developers.google.com/youtube/v3/docs/videos/list\#http-request
 
