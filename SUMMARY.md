@@ -11,4 +11,5 @@
 * [useful framework](useful-framework.md)
 * [git tool](git-tool.md)
 * [Full stack mobile rubric](full-stack-mobile-rubric.md)
+* [solo project stack tech blockers](solo-project-stack-tech-blockers.md)
 
