@@ -6,6 +6,8 @@ share extension
 
 [https://hackernoon.com/how-to-build-an-ios-share-extension-in-swift-4a2019935b2e](https://hackernoon.com/how-to-build-an-ios-share-extension-in-swift-4a2019935b2e)
 
+[https://medium.com/@ales.musto/making-a-share-extension-that-accepts-text-and-urls-in-combination-with-coredata-swift-3-a0139c0f9800](https://medium.com/@ales.musto/making-a-share-extension-that-accepts-text-and-urls-in-combination-with-coredata-swift-3-a0139c0f9800)
+
 rails \(in the future switch to server\)
 
 [https://www.codemy.net/channels/rails-api](https://www.codemy.net/channels/rails-api)
@@ -18,12 +20,10 @@ duration:
 
 `PT15M33S`
 
-  
 p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: \#000000}  
-span.s1 {font-variant-ligatures: no-common-ligatures}  
+span.s1 {font-variant-ligatures: no-common-ligatures}
 
-
-**https://i.ytimg.com/vi/Y7ojcTR78qE/default.jpg**
+[https://i.ytimg.com/vi/Y7ojcTR78qE/default.jpg](https://i.ytimg.com/vi/Y7ojcTR78qE/default.jpg)
 
 indicates that the video is 15 minutes and 33 seconds long.
 
@@ -50,14 +50,12 @@ true
 )
 ```
 
-  
 p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: \#000000; background-color: \#ffffff}  
 p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: \#000000; background-color: \#ffffff; min-height: 15.0px}  
 span.s1 {color: \#ba2da2}  
 span.s2 {color: \#703daa}  
 span.s3 {color: \#d12f1b}  
-span.s4 {color: \#3e1e81}  
-
+span.s4 {color: \#3e1e81}
 
 func formatDuration\(duration: String\) -&gt;String {
 
@@ -69,9 +67,21 @@ let cleaned = parts.filter {$0 != ""}
 
 let durationStr = cleaned.joined\(separator: ","\)
 
-
-
 return durationStr
 
- }
+}
+
+
+
+  
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: \#000000}  
+span.s1 {font-variant-ligatures: no-common-ligatures}  
+
+
+**https://itunes.apple.com/us/podcast/sleep-and-relax-asmr/id1133320064?mt=2&i=10003989096**  
+
+
+https://www.appcoda.com/building-rss-reader-using-uisplitviewcontroller-uipopoverviewcontroller/
+
+http://sleepandrelaxasmr.libsyn.com/rss
 
