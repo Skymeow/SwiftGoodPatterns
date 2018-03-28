@@ -1,5 +1,7 @@
 ### [https://www.raywenderlich.com/160631/swift-algorithm-club-heap-and-priority-queue-data-structure](https://www.raywenderlich.com/160631/swift-algorithm-club-heap-and-priority-queue-data-structure)
 
+### [https://docs.google.com/document/d/1Yre0sihpwnhBZqcWbzXNF9b9\_O58awQxl1rAo650slg/edit](https://docs.google.com/document/d/1Yre0sihpwnhBZqcWbzXNF9b9_O58awQxl1rAo650slg/edit)
+
 ### bitwise operation and usage
 
 for swipe value
