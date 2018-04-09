@@ -71,17 +71,18 @@ return durationStr
 
 }
 
-
-
-  
 p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: \#000000}  
-span.s1 {font-variant-ligatures: no-common-ligatures}  
+span.s1 {font-variant-ligatures: no-common-ligatures}
+
+[https://itunes.apple.com/us/podcast/sleep-and-relax-asmr/id1133320064?mt=2&i=10003989096](https://itunes.apple.com/us/podcast/sleep-and-relax-asmr/id1133320064?mt=2&i=10003989096)
+
+[https://www.appcoda.com/building-rss-reader-using-uisplitviewcontroller-uipopoverviewcontroller/](https://www.appcoda.com/building-rss-reader-using-uisplitviewcontroller-uipopoverviewcontroller/)
+
+[http://sleepandrelaxasmr.libsyn.com/rss](http://sleepandrelaxasmr.libsyn.com/rss)
 
 
-**https://itunes.apple.com/us/podcast/sleep-and-relax-asmr/id1133320064?mt=2&i=10003989096**  
 
+imges for safari
 
-https://www.appcoda.com/building-rss-reader-using-uisplitviewcontroller-uipopoverviewcontroller/
-
-http://sleepandrelaxasmr.libsyn.com/rss
+https://stackoverflow.com/questions/33205158/access-webpage-properties-in-share-extension
 
