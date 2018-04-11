@@ -1,3 +1,5 @@
+assets: [https://drive.google.com/drive/folders/1Dvx9GLptyFfiLAOdz6ZgAY9A2DLwVPxD?usp=sharing](https://drive.google.com/drive/folders/1Dvx9GLptyFfiLAOdz6ZgAY9A2DLwVPxD?usp=sharing)
+
 third party api[https://docs.google.com/document/d/1-4Jb8vkNKgREcrK3D\_8D88cYIW5m466d0qu0kx1KJTY/edit?ts=5ab5248a](https://docs.google.com/document/d/1-4Jb8vkNKgREcrK3D_8D88cYIW5m466d0qu0kx1KJTY/edit?ts=5ab5248a)
 
 python rapper for readable io
@@ -86,5 +88,5 @@ imges for safari
 
 [https://stackoverflow.com/questions/33205158/access-webpage-properties-in-share-extension](https://stackoverflow.com/questions/33205158/access-webpage-properties-in-share-extension)
 
-https://chariotsolutions.com/blog/post/implementing-drag-drop-ios-11/
+[https://chariotsolutions.com/blog/post/implementing-drag-drop-ios-11/](https://chariotsolutions.com/blog/post/implementing-drag-drop-ios-11/)
 
