@@ -1,3 +1,5 @@
+third party api[https://docs.google.com/document/d/1-4Jb8vkNKgREcrK3D\_8D88cYIW5m466d0qu0kx1KJTY/edit?ts=5ab5248a](https://docs.google.com/document/d/1-4Jb8vkNKgREcrK3D_8D88cYIW5m466d0qu0kx1KJTY/edit?ts=5ab5248a)
+
 python rapper for readable io
 
 [https://gist.github.com/lightstrike/0f5606e615106c44cbb8fb524595cb12](https://gist.github.com/lightstrike/0f5606e615106c44cbb8fb524595cb12)
@@ -80,9 +82,9 @@ span.s1 {font-variant-ligatures: no-common-ligatures}
 
 [http://sleepandrelaxasmr.libsyn.com/rss](http://sleepandrelaxasmr.libsyn.com/rss)
 
-
-
 imges for safari
 
-https://stackoverflow.com/questions/33205158/access-webpage-properties-in-share-extension
+[https://stackoverflow.com/questions/33205158/access-webpage-properties-in-share-extension](https://stackoverflow.com/questions/33205158/access-webpage-properties-in-share-extension)
+
+https://chariotsolutions.com/blog/post/implementing-drag-drop-ios-11/
 
