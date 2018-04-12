@@ -24,5 +24,17 @@ git rebase --abort
 
 ##### go to dev branch and do git merge your branch
 
+### push untracked files:
+
+`git ls-files -o --exclude-standard`gives untracked files, so you can do something like below \( or add an alias to it\):
+
+```
+git add $(git ls-files -o --exclude-standard)
+
+```
+
+  
+
+
 
 
