@@ -1,4 +1,12 @@
-assets: [https://drive.google.com/drive/folders/1Dvx9GLptyFfiLAOdz6ZgAY9A2DLwVPxD?usp=sharing](https://drive.google.com/drive/folders/1Dvx9GLptyFfiLAOdz6ZgAY9A2DLwVPxD?usp=sharing)
+### green tint color:
+
+UIColor\(red:0.25, green:0.58, blue:0.58, alpha:1.0\)
+
+### Grey
+
+UIColor\(red:0.73, green:0.73, blue:0.73, alpha:1.0\)
+
+### assets: [https://drive.google.com/drive/folders/1Dvx9GLptyFfiLAOdz6ZgAY9A2DLwVPxD?usp=sharing](https://drive.google.com/drive/folders/1Dvx9GLptyFfiLAOdz6ZgAY9A2DLwVPxD?usp=sharing)
 
 third party api[https://docs.google.com/document/d/1-4Jb8vkNKgREcrK3D\_8D88cYIW5m466d0qu0kx1KJTY/edit?ts=5ab5248a](https://docs.google.com/document/d/1-4Jb8vkNKgREcrK3D_8D88cYIW5m466d0qu0kx1KJTY/edit?ts=5ab5248a)
 
