@@ -2,14 +2,13 @@ editing drag and drop:
 
 ```
  func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        
+
         return true
     }
-    
+
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         <#code#>
     }
-    
 ```
 
 ### green tint color:
@@ -111,4 +110,49 @@ imges for safari
 [https://stackoverflow.com/questions/33205158/access-webpage-properties-in-share-extension](https://stackoverflow.com/questions/33205158/access-webpage-properties-in-share-extension)
 
 [https://chariotsolutions.com/blog/post/implementing-drag-drop-ios-11/](https://chariotsolutions.com/blog/post/implementing-drag-drop-ios-11/)
+
+
+
+
+
+```
+func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.lastContentOffset = scrollView.contentOffset.y
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        let cells = tableView.visibleCells as! [VideoFeedCell]
+        if tableView.indexPathsForVisibleRows?.count != 0 {
+            let indexPath = tableView.indexPathsForVisibleRows!.last!
+            let lastVisibleIndex = indexPath.row
+            print(lastVisibleIndex)
+            if lastVisibleIndex > 1 {
+        //  1.      scrolling up
+            if self.lastContentOffset! > scrollView.contentOffset.y {
+                //                disable the last visible cell
+                let prevIndex = tableView.indexPathsForVisibleRows?[lastVisibleIndex-2]
+                if let old =  self.tableView.cellForRow(at: prevIndex!) as? VideoFeedCell {
+                    old.playerLayer?.player?.pause()
+                }
+                //                play the second last visible cell
+                self.currentPlayingCell = cells[lastVisibleIndex-1]
+                self.prepareVideoLoading(cell: self.currentPlayingCell!, forItemAtIndex: (lastVisibleIndex-1))
+            } else if self.lastContentOffset! < scrollView.contentOffset.y {
+                //                disable the second last visible cell
+                let prevIndex = tableView.indexPathsForVisibleRows?[lastVisibleIndex-1]
+                if let old =  self.tableView.cellForRow(at: prevIndex!) as? VideoFeedCell {
+                    old.playerLayer?.player?.pause()
+                }
+                //                play the last visible cell
+                self.currentPlayingCell = cells[lastVisibleIndex-2]
+                self.prepareVideoLoading(cell: self.currentPlayingCell!, forItemAtIndex: (lastVisibleIndex-1))
+            }
+            }
+        }
+    }
+    
+```
+
+
 
