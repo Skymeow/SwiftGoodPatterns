@@ -30,3 +30,9 @@ Coordinator: [https://will.townsend.io/2016/an-ios-coordinator-pattern](https://
 
 mvp:  [http://iyadagha.com/using-mvp-ios-swift/](http://iyadagha.com/using-mvp-ios-swift/)
 
+### Contentoffset
+
+[https://fizzbuzzer.com/understanding-the-contentoffset-and-contentinset-properties-of-the-uiscrollview-class/](https://fizzbuzzer.com/understanding-the-contentoffset-and-contentinset-properties-of-the-uiscrollview-class/)
+
+
+

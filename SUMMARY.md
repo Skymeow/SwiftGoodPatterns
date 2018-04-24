@@ -14,4 +14,5 @@
 * [solo project stack tech blockers](solo-project-stack-tech-blockers.md)
 * [blockchain and swift](blockchain-and-swift.md)
 * [Persistent store and coredata](persistent-store-and-coredata.md)
+* [What I learned from making HypeCam\(video + audio processing\)](what-i-learned-from-making-hypecamvideo-+-audio-processing.md)
 
