@@ -111,17 +111,13 @@ imges for safari
 
 [https://chariotsolutions.com/blog/post/implementing-drag-drop-ios-11/](https://chariotsolutions.com/blog/post/implementing-drag-drop-ios-11/)
 
-
-
-
-
 ```
 func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         self.lastContentOffset = scrollView.contentOffset.y
     }
-    
+
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        
+
         let cells = tableView.visibleCells as! [VideoFeedCell]
         if tableView.indexPathsForVisibleRows?.count != 0 {
             let indexPath = tableView.indexPathsForVisibleRows!.last!
@@ -151,7 +147,25 @@ func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
             }
         }
     }
-    
+```
+
+### Sticky tableview cell\( pagination version for video player\)
+
+```
+//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+//        let cells = tableView.visibleCells as! [VideoFeedCell]
+//        let indexPath = tableView.indexPathsForVisibleRows!.last!
+//        let count = indexPath.count
+//        if count > 1 {
+//            let prevIndex = tableView.indexPathsForVisibleRows?[count-2]
+//            if let old =  self.tableView.cellForRow(at: prevIndex!) as? VideoFeedCell {
+//                old.playerLayer?.player?.pause()
+//            }
+//        }
+//        self.currentPlayingCell = cells.last!
+//        self.prepareVideoLoading(cell: self.currentPlayingCell!, forItemAtIndex: (indexPath.row))
+//
+//    }
 ```
 
 
