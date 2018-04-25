@@ -39,5 +39,11 @@ git stash list
 git apply ${}
 ```
 
+### stash including untracked files
+
+```
+git stash -u
+```
+
 
 
