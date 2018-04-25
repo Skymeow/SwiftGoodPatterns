@@ -29,12 +29,15 @@ git rebase --abort
 `git ls-files -o --exclude-standard`gives untracked files, so you can do something like below \( or add an alias to it\):
 
 ```
-git add $(git ls-files -o --exclude-standard)
 
 ```
 
-  
+### go back to the state before stash:
 
+```
+git stash list
+git apply ${}
+```
 
 
 
