@@ -1,4 +1,4 @@
-### 
+
 
 ### How memory management works in swift:
 
@@ -25,6 +25,7 @@ reference type: eg: class. point to the piece of memory without actually creatin
 * # Comparing instance data with
 
   makes sense
+
 * You want copies to have independent state
 * The data will be used in code across multiple threads
 
@@ -33,7 +34,22 @@ reference type: eg: class. point to the piece of memory without actually creatin
 * # Comparing instance identity with
 
   makes sense
+
 * You want to create shared, mutable state
+
+### Callbacks are functions that often take the form of a [closure](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html#//apple_ref/doc/uid/TP40014097-CH11-ID94),
+
+### threads:
+
+path for accecution for codes 
+
+### Concurrent:
+
+accecute muti taasks at the same time at a scalable manner
+
+### GCD
+
+### 
 
 
 

@@ -337,7 +337,7 @@ func addPhoto(_ photo: Photo) {
 }
 ```
 
-**Grand Central Dispatch **is a wrapper around creating threads and managing that code, making sure that a number of tasks of variable importance and length are executed in a timeframe as reasonable as possible.
+**Grand Central Dispatch **is a a library! wrapper around creating threads and managing that code, making sure that a number of tasks of variable importance and length are executed in a timeframe as reasonable as possible.
 
 eg: move the work to a background global queue and run the work in the closure asynchronously in the below code
 
