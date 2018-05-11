@@ -34,5 +34,17 @@ mvp:  [http://iyadagha.com/using-mvp-ios-swift/](http://iyadagha.com/using-mvp-i
 
 [https://fizzbuzzer.com/understanding-the-contentoffset-and-contentinset-properties-of-the-uiscrollview-class/](https://fizzbuzzer.com/understanding-the-contentoffset-and-contentinset-properties-of-the-uiscrollview-class/)
 
+### switch UI subviews in container view
+
+bringSubview\(toFront:\)
+
+Moves the specified subview so that it appears on top of its siblings.
+
+view: The subview to move to the front.
+
+### AVfoundation replace videoitem:
+
+openfunc replaceCurrentItem\(with item: AVPlayerItem?\)
+
 
 

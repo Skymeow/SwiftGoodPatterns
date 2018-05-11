@@ -1,5 +1,3 @@
-
-
 ### How memory management works in swift:
 
 swift use ARC: automatic reference count to manage deallocate and allocate memories.
@@ -27,6 +25,7 @@ reference type: eg: class. point to the piece of memory without actually creatin
   makes sense
 
 * You want copies to have independent state
+
 * The data will be used in code across multiple threads
 
 #### Use a reference type \(e.g. use aclass\) when:
@@ -41,7 +40,7 @@ reference type: eg: class. point to the piece of memory without actually creatin
 
 ### threads:
 
-path for accecution for codes 
+path for accecution for codes
 
 ### Concurrent:
 
@@ -49,7 +48,13 @@ accecute muti taasks at the same time at a scalable manner
 
 ### GCD
 
-### 
+### Delegate:
+
+Delegation is a design pattern that enables a class or structure to hand off \(or delegate\) some of its responsibilities to an instance of another type
+
+### Closure:
+
+_**Closures**are self-contained blocks of functionality that can be passed around and used in your code_
 
 
 
