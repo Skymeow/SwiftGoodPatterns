@@ -155,5 +155,12 @@ else if date1 < date2
 //        let dateStr = formatter.string(from: date)
 ```
 
+### auto layout
 
+_Auto Layout _dynamically calculates the size and position of all the views in your view hierarchy. It's an Xcode feature
+
+Set the buttons horizontal Compression Resistance Priority to 1000. And now, change the priority of the width constraint to any value between 0 to 999. ie; less than the horizontal Compression Resistance Priority of the button. Auto Layout now allows our button’s intrinsic content size to take precedent over our width constraint:
+
+  
+![](/assets/Screenshot 2018-05-14 14.21.50.png)
 

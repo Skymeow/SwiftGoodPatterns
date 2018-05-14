@@ -281,6 +281,20 @@ The Xcode memory graph debugger helps to find and fix to retain cycles and leake
 
 ### [applicationWillEnterForeground\(\_:\)](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623076-applicationwillenterforeground)
 
+### NSOperation
+
+http://nshipster.com/nsoperation/
+
+#### When to Use Grand Central Dispatch
+
+Dispatch queues, groups, semaphores, sources, and barriers comprise an essential set of concurrency primitives, on top of which all of the system frameworks are built.
+
+For one-off computation, or simply speeding up an existing method, it will often be more convenient to use a lightweight GCD`dispatch`than employ`NSOperation`.
+
+#### When to Use NSOperation
+
+`NSOperation`can be scheduled with a set of dependencies at a particular queue priority and quality of service. Unlike a block scheduled on a GCD queue, an`NSOperation`can be cancelled and have its operational state queried. And by subclassing,`NSOperation`can associate the result of its work on itself for future reference.
+
 ### \(put networking in here, so it would load new views everytime you revisit the view\)
 
 ### multi threading:
