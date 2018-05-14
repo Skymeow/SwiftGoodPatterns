@@ -157,10 +157,59 @@ else if date1 < date2
 
 ### auto layout
 
-_Auto Layout _dynamically calculates the size and position of all the views in your view hierarchy. It's an Xcode feature
+\_Auto Layout \_dynamically calculates the size and position of all the views in your view hierarchy. It's an Xcode feature
 
 Set the buttons horizontal Compression Resistance Priority to 1000. And now, change the priority of the width constraint to any value between 0 to 999. ie; less than the horizontal Compression Resistance Priority of the button. Auto Layout now allows our button’s intrinsic content size to take precedent over our width constraint:
 
-  
-![](/assets/Screenshot 2018-05-14 14.21.50.png)
+### ![](/assets/Screenshot 2018-05-14 14.21.50.png)Singleton
+
+### use it when you want to make sure only one instance of a class is instantiated and that your application only uses that instance.
+
+```
+let
+ sharedURLSession 
+=
+URLSession
+.
+shared
+
+
+// Default File Manager
+let
+ defaultFileManager 
+=
+FileManager
+.
+default
+// Standard User Defaults
+let
+ standardUserDefaults 
+=
+UserDefaults
+.
+standard
+
+
+// Default Payment Queue
+let
+ defaultPaymentQueue 
+=
+SKPaymentQueue
+.
+default
+(
+)
+```
+
+#### why should we not use it
+
+**They are global mutable shared state.**
+
+**The relationships between singletons and the code that depends on them is usually not very well defined**
+
+1. . Since singletons are so convenient and easy to access — using them extensively usually leads to very hard to maintain “spaghetti code” that doesn’t have clear separations between objects.
+2. **Managing their lifecycle can be tricky**
+   .
+
+
 
