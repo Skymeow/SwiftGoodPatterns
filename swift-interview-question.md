@@ -203,13 +203,15 @@ default
 
 #### why should we not use it
 
-**They are global mutable shared state.**
+1. **They are global mutable shared state.**
 
-**The relationships between singletons and the code that depends on them is usually not very well defined**
+2. **The relationships between singletons and the code that depends on them is usually not very well defined**
 
-1. . Since singletons are so convenient and easy to access — using them extensively usually leads to very hard to maintain “spaghetti code” that doesn’t have clear separations between objects.
-2. **Managing their lifecycle can be tricky**
-   .
+ Since singletons are so convenient and easy to access — using them extensively usually leads to very hard to maintain “spaghetti code” that doesn’t have clear separations between objects
+
+3. **Managing their lifecycle can be tricky**
+
+.
 
 
 
