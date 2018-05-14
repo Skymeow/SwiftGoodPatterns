@@ -207,11 +207,13 @@ default
 
 2. **The relationships between singletons and the code that depends on them is usually not very well defined**
 
- Since singletons are so convenient and easy to access — using them extensively usually leads to very hard to maintain “spaghetti code” that doesn’t have clear separations between objects
+   Since singletons are so convenient and easy to access — using them extensively usually leads to very hard to maintain “spaghetti code” that doesn’t have clear separations between objects
 
 3. **Managing their lifecycle can be tricky**
 
-.
+### .coreanimaiton
+
+CALayers are what CAAnimations are applied to, not UIViews.
 
 
 
