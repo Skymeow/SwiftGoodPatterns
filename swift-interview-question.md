@@ -213,7 +213,13 @@ default
 
 ### .coreanimaiton
 
+[https://academy.realm.io/posts/tryswift-tim-oliver-advanced-graphics-with-core-animation/](https://academy.realm.io/posts/tryswift-tim-oliver-advanced-graphics-with-core-animation/)
+
 CALayers are what CAAnimations are applied to, not UIViews.
 
+Core Graphics is entirely done on the CPU, and cannot be performed on the GPU.
 
+eg:
+
+You can use Core Graphics to create the actual bitmaps, and use Core Animation to display them to create some cool effects.
 
