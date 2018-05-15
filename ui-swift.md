@@ -46,5 +46,9 @@ view: The subview to move to the front.
 
 openfunc replaceCurrentItem\(with item: AVPlayerItem?\)
 
+### sticky scrolling offset collection view:
+
+https://stackoverflow.com/questions/13492037/targetcontentoffsetforproposedcontentoffsetwithscrollingvelocity-without-subcla
+
 
 

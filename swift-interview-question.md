@@ -223,3 +223,11 @@ eg:
 
 You can use Core Graphics to create the actual bitmaps, and use Core Animation to display them to create some cool effects.
 
+
+
+#### extension limitation
+
+Can't have stored property, override function in extensions, have to use static var in extension for instantiate properties.
+
+
+
