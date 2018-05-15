@@ -223,11 +223,39 @@ eg:
 
 You can use Core Graphics to create the actual bitmaps, and use Core Animation to display them to create some cool effects.
 
-
-
 #### extension limitation
 
 Can't have stored property, override function in extensions, have to use static var in extension for instantiate properties.
+
+
+
+### NSOperatio VS GCD
+
+The `NSOperation`API is a higher level abstraction of Grand Central Dispatch.
+
+Even though this is a highly optimized process, it is inherently slower than Grand Central Dispatch, which operates at a lower level.
+
+## NSOPeration
+
+### 1. Dependencies
+
+The`NSOperation`API provides support for dependencies. This is a powerful concept that enables developers to execute tasks in a specific order. An operation is ready when every dependency has finished executing.
+
+### 2. Observable
+
+The`NSOperation`and`NSOperationQueue`classes have a number of properties that can be observed, using KVO \([Key Value Observing](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html)\). This is another important benefit if you want to monitor the state of an operation or operation queue.
+
+### 3. Pause, Cancel, Resume\( more flexible than GCD\)
+
+Operations can be paused, resumed, and cancelled. Once you dispatch a task using Grand Central Dispatch, you no longer have control or insight into the execution of that task. The`NSOperation`API is more flexible in that respect, giving the developer control over the operation's life cycle.
+
+### 4. Control
+
+The`NSOperationQueue`also adds a number of benefits to the mix. For example, you can specify the maximum number of queued operations that can run simultaneously. This makes it easy to control how many operations run at the same time or to create a serial operation queue.
+
+## GCD
+
+Grand Central Dispatch is ideal if you just need to dispatch a block of code to a serial or concurrent queue.
 
 
 
