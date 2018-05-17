@@ -1,4 +1,4 @@
-### [https://www.raywenderlich.com/160631/swift-algorithm-club-heap-and-priority-queue-data-structure](https://www.raywenderlich.com/160631/swift-algorithm-club-heap-and-priority-queue-data-structure)
+[https://www.raywenderlich.com/160631/swift-algorithm-club-heap-and-priority-queue-data-structure](https://www.raywenderlich.com/160631/swift-algorithm-club-heap-and-priority-queue-data-structure)
 
 ### [https://docs.google.com/document/d/1Yre0sihpwnhBZqcWbzXNF9b9\_O58awQxl1rAo650slg/edit](https://docs.google.com/document/d/1Yre0sihpwnhBZqcWbzXNF9b9_O58awQxl1rAo650slg/edit)
 
@@ -227,8 +227,6 @@ You can use Core Graphics to create the actual bitmaps, and use Core Animation t
 
 Can't have stored property, override function in extensions, have to use static var in extension for instantiate properties.
 
-
-
 ### NSOperatio VS GCD
 
 The `NSOperation`API is a higher level abstraction of Grand Central Dispatch.
@@ -256,6 +254,10 @@ The`NSOperationQueue`also adds a number of benefits to the mix. For example, you
 ## GCD
 
 Grand Central Dispatch is ideal if you just need to dispatch a block of code to a serial or concurrent queue.
+
+### OOP
+
+[https://www.raywenderlich.com/160728/object-oriented-programming-swift](https://www.raywenderlich.com/160728/object-oriented-programming-swift)
 
 
 
