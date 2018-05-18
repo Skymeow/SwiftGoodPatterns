@@ -259,5 +259,7 @@ Grand Central Dispatch is ideal if you just need to dispatch a block of code to 
 
 [https://www.raywenderlich.com/160728/object-oriented-programming-swift](https://www.raywenderlich.com/160728/object-oriented-programming-swift)
 
+### The _factory _pattern is a way to encapsulate the implementation details of creating objects, which adheres to a common base class or interface.
+
 
 
