@@ -265,9 +265,17 @@ Grand Central Dispatch is ideal if you just need to dispatch a block of code to 
 
 **given an array of words, how to eliminate the duplicates. You have a simple tree structure Ⓐ and its clone ⓐ. Each node in the tree has a pointer to it's parent as well as an array of its children. Given an original tree's node Ⓑ and cloned tree ⓐ, implement a method that returns ⓑ \(the clone of Ⓑ\). \(Imagine finding the matching UIButton/UISlider/UIView in a separate cloned view controller.\) Original Ⓐ ┏━┻━━┓ ◯ ◯ ┏┻┓ ┏━╋━┓ ◯ ◯ ◯ ◯ ◯ ┏┻┓ ┃ ◯ Ⓑ ◯ Clone ⓐ ┏━┻━━┓ ◯ ◯ ┏┻┓ ┏━╋━┓ ◯ ◯ ◯ ◯ ◯ ┏┻┓ ┃ ◯ ⓑ ◯**
 
-
-
 **Find the subview with specific tag**
 
 [https://medium.com/journey-of-one-thousand-apps/finding-the-first-common-superview-in-swift-4abac8a87d84](https://medium.com/journey-of-one-thousand-apps/finding-the-first-common-superview-in-swift-4abac8a87d84)
+
+### Order of functions in cell
+
+```
+awakeFromNib called
+notesCell dequeued
+layoutSubviews called
+```
+
+
 
