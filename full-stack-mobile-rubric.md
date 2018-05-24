@@ -132,5 +132,9 @@ JSON stands for JavaScript Object Notation; it provides a straightforward, human
 
 A synchronous function returns only after the completion of a task that it orders. An asynchronous function, on the other hand, returns immediately, ordering the task to be done but not waiting for it. Thus, an asynchronous function does not block the current thread of execution from proceeding on to the next function.
 
+### MVVM:
+
+The View Model invokes changes in the Model and updates itself with the updated Model, and since we have a binding between the View and the View Model, the first is updated accordingly.
+
 
 
