@@ -70,8 +70,35 @@ When the order of the items in the collection is not important, NSSet offers bet
 
 Core Data is an object graph manager which also has the ability to persist object graphs to a persistent store, on a disk
 
-  
+### OOP
 
+#### polymorphism:
+
+Polymorphism is the ability of a class instance to be substituted by a class instance of one of its subclasses\(similar to overriding\)
+
+#### Encapsulation:
+
+Encapsulation is an object-oriented design principle and hides the internal states and functionality of objects. That means the objects keep their state information private.
+
+#### Inheritance
+
+#### Overriding versus Overloading
+
+#### Types versus instances
+
+#### Composition
+
+#### _Access Control_ 
+
+### AssosiatedType:
+
+
+
+### Any & Anyobject
+
+ANY can represent an instance of any type at all, including function types and optional types.
+
+AnyObject can represent an instance of any class type.
 
 
 
