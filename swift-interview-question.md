@@ -277,5 +277,234 @@ notesCell dequeued
 layoutSubviews called
 ```
 
+### control statement
+
+**Continue:**
+
+> A continue statement ends program execution of the current iteration of a loop statement but does not stop execution of the loop statement.
+
+```
+var
+ sum 
+=
+0
+;
+for
+var
+ i 
+=
+0
+;
+ i 
+<
+5
+;
+ i
+++
+{
+if
+ i 
+==
+4
+{
+continue
+//this ends this iteration of the loop
+
+}
+
+    sum 
++=
+ i 
+//thus, 0, 1, 2, and 3 will be added to this, but not 4
+
+}
+```
+
+**Break:**
+
+> A break statement ends program execution of a loop, an if statement, or a switch statement.
+
+```
+var
+ sum 
+=
+0
+;
+for
+var
+ i 
+=
+0
+;
+ i 
+<
+5
+;
+ i
+++
+{
+if
+ i 
+==
+2
+{
+break
+//this ends the entire if-statement
+
+}
+
+    sum 
++=
+ i 
+//thus only 0 and 1 will be added
+
+}
+```
+
+**Fallthrough:**
+
+> A fallthrough statement causes program execution to continue from one case in a switch statement to the next case.
+
+```
+var
+ sum 
+=
+0
+var
+ i 
+=
+3
+switch
+ i 
+{
+case
+1
+:
+
+    sum 
++=
+ i
+
+case
+2
+:
+
+    sum 
++=
+ i
+
+case
+3
+:
+
+    sum 
++=
+ i
+    
+fallthrough
+//allows for the next case to be evaluated
+
+case
+ i 
+%
+3
+:
+
+    sum 
++=
+ i
+
+}
+```
+
+**Throw:**
+
+> You use a throw statement to throw an error.
+
+You could throw an error like the one below that says that five more coins are needed due to insufficient funds.
+
+```
+throw
+VendingMachineError
+.
+InsufficientFunds
+(
+coinsNeeded
+:
+5
+)
+```
+
+**Return:**
+
+> A return statement occurs in the body of a function or method definition and causes program execution to return to the calling function or method.
+
+```
+func
+ myMethod
+(){
+
+    newMethod
+()
+}
+func
+ newMethod
+(){
+var
+ sum 
+=
+0
+;
+
+    sum 
++=
+2
+;
+if
+ sum 
+>
+1
+{
+return
+//jumps back to myMethod()
+
+}
+
+    sum 
++=
+3
+;
+//this statement will never be executed
+
+}
+```
+
+Returns can also be used to return a value from the function.
+
+```
+func
+ myFunc
+()
+{
+let
+ value 
+=
+ newFunc
+()
+//assigns 5 to "value"
+
+}
+func
+ newFunc
+()
+-
+>
+Int
+{
+return
+5
+}
+```
+
 
 
