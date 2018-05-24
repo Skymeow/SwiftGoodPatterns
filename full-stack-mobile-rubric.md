@@ -56,5 +56,11 @@ Delegation is a design pattern that enables a class or structure to hand off \(o
 
 _**Closures**are self-contained blocks of functionality that can be passed around and used in your code_
 
+### strong & weak
+
+If object A has a strong reference to B, and no other object is referencing B, B has count 1
+
+Now, if B wants to have a reference to A, we would want to use a weak reference. Weak references don’t increment the reference count of the object. So in this particular case, if A has no other objects referencing it but B, A’s count would be 0 given B’s weak reference.
+
 
 
