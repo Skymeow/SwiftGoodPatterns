@@ -92,6 +92,8 @@ Encapsulation is an object-oriented design principle and hides the internal stat
 
 ### AssosiatedType:
 
+\(protocol without subclassing\)
+
 ### Any & Anyobject
 
 ANY can represent an instance of any type at all, including function types and optional types.
@@ -142,7 +144,7 @@ We use a storyboard or xib in our iOS app, then we created IBOutlets. IBOutlet i
 
 ### Explain what Lazy stored properties are and when they are useful
 
-> Lazy stored properties are used for a property whose initial values are not set until the first time it is used. You can declare a lazy stored stored property by writing the lazy modifier before its declaration. Lazy properties are useful when the initial value of a property is reliant on outside factors whose values are unknown.
+> Lazy stored properties are used for a property whose** **_**initial values are not set until the first time it is used**._ You can declare a lazy stored stored property by writing the lazy modifier before its declaration. Lazy properties are useful when the initial value of a property is reliant on outside factors whose values are unknown.
 
 
 
