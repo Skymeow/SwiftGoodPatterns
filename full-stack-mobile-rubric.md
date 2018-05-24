@@ -136,5 +136,13 @@ A synchronous function returns only after the completion of a task that it order
 
 The View Model invokes changes in the Model and updates itself with the updated Model, and since we have a binding between the View and the View Model, the first is updated accordingly.
 
+### Dependency injection:
+
+We use a storyboard or xib in our iOS app, then we created IBOutlets. IBOutlet is a property related to a view. These are injected into the view controller when it is instantiated, which is essentially a form of Dependency Injection. There are forms of dependency injection: constructor, property and method.
+
+### Explain what Lazy stored properties are and when they are useful
+
+> Lazy stored properties are used for a property whose initial values are not set until the first time it is used. You can declare a lazy stored stored property by writing the lazy modifier before its declaration. Lazy properties are useful when the initial value of a property is reliant on outside factors whose values are unknown.
+
 
 
