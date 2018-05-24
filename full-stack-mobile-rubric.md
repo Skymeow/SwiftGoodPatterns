@@ -62,5 +62,9 @@ If object A has a strong reference to B, and no other object is referencing B, B
 
 Now, if B wants to have a reference to A, we would want to use a weak reference. Weak references don’t increment the reference count of the object. So in this particular case, if A has no other objects referencing it but B, A’s count would be 0 given B’s weak reference.
 
+### set & array
+
+When the order of the items in the collection is not important, NSSet offers better performance for finding items in the collection; the reason is that the NSSet uses hash values to find items \(like a dictionary\), while an array has to iterate over its entire contents to find a particular object.
+
 
 
