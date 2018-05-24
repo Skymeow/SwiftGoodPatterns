@@ -88,11 +88,9 @@ Encapsulation is an object-oriented design principle and hides the internal stat
 
 #### Composition
 
-#### _Access Control_ 
+#### _Access Control_
 
 ### AssosiatedType:
-
-
 
 ### Any & Anyobject
 
@@ -100,5 +98,33 @@ ANY can represent an instance of any type at all, including function types and o
 
 AnyObject can represent an instance of any class type.
 
+### Closures - value or reference types?
 
+> Closures are reference types. If a closure is assigned to a variable and the variable is copied into another variable, a reference to the same closure and its capture list is also copied.
+
+### Optional:
+
+an optional is an enum with two cases; none, or nil, and some
+
+```
+enum
+Optional
+<
+T
+>
+ {
+      
+case
+none
+case
+some
+( T )
+    }
+```
+
+### REST, jSON
+
+REST, or REpresentational State Transfer, is a set of rules for designing consistent, easy-to-use and maintainable web APIs.
+
+JSON stands for JavaScript Object Notation; it provides a straightforward, human-readable and portable mechanism for transporting data between two systems. Apple supplies the JSONSerialization class to help convert your objects in memory to JSON and vice-versa.
 
