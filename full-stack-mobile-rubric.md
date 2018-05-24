@@ -66,5 +66,12 @@ Now, if B wants to have a reference to A, we would want to use a weak reference.
 
 When the order of the items in the collection is not important, NSSet offers better performance for finding items in the collection; the reason is that the NSSet uses hash values to find items \(like a dictionary\), while an array has to iterate over its entire contents to find a particular object.
 
+### coredata
+
+Core Data is an object graph manager which also has the ability to persist object graphs to a persistent store, on a disk
+
+  
+
+
 
 
