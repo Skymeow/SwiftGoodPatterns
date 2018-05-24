@@ -113,7 +113,7 @@ Optional
 T
 >
  {
-      
+
 case
 none
 case
@@ -127,4 +127,10 @@ some
 REST, or REpresentational State Transfer, is a set of rules for designing consistent, easy-to-use and maintainable web APIs.
 
 JSON stands for JavaScript Object Notation; it provides a straightforward, human-readable and portable mechanism for transporting data between two systems. Apple supplies the JSONSerialization class to help convert your objects in memory to JSON and vice-versa.
+
+### sync and aysnc
+
+A synchronous function returns only after the completion of a task that it orders. An asynchronous function, on the other hand, returns immediately, ordering the task to be done but not waiting for it. Thus, an asynchronous function does not block the current thread of execution from proceeding on to the next function.
+
+
 
