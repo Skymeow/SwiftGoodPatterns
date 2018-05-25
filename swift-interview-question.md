@@ -400,7 +400,7 @@ case
     sum 
 +=
  i
-    
+
 fallthrough
 //allows for the next case to be evaluated
 
@@ -505,6 +505,10 @@ return
 5
 }
 ```
+
+### decoding & nestedcontainer
+
+[https://stackoverflow.com/questions/44549310/how-to-decode-a-nested-json-struct-with-swift-decodable-protocol](https://stackoverflow.com/questions/44549310/how-to-decode-a-nested-json-struct-with-swift-decodable-protocol)
 
 
 
