@@ -235,6 +235,8 @@ Even though this is a highly optimized process, it is inherently slower than Gra
 
 ## NSOPeration
 
+class img filter problem :[https://www.raywenderlich.com/76341/use-nsoperation-nsoperationqueue-swift](https://www.raywenderlich.com/76341/use-nsoperation-nsoperationqueue-swift)
+
 ### 1. Dependencies
 
 The`NSOperation`API provides support for dependencies. This is a powerful concept that enables developers to execute tasks in a specific order. An operation is ready when every dependency has finished executing.
@@ -509,6 +511,4 @@ return
 ### decoding & nestedcontainer
 
 [https://stackoverflow.com/questions/44549310/how-to-decode-a-nested-json-struct-with-swift-decodable-protocol](https://stackoverflow.com/questions/44549310/how-to-decode-a-nested-json-struct-with-swift-decodable-protocol)
-
-
 
