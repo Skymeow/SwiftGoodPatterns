@@ -4,7 +4,11 @@ Solution: use`init`explicitly whenever you're initializing a generic parameter r
 
 ### Alamofire
 
-https://stackoverflow.com/questions/27855319/post-request-with-a-simple-string-in-body-with-alamofire
+[https://stackoverflow.com/questions/27855319/post-request-with-a-simple-string-in-body-with-alamofire](https://stackoverflow.com/questions/27855319/post-request-with-a-simple-string-in-body-with-alamofire)
+
+### When deploy app using both carthage and pod, architecture error:
+
+https://stackoverflow.com/questions/30547283/submit-to-app-store-issues-unsupported-architecture-x86
 
 
 
