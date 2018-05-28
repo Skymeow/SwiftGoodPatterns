@@ -19,6 +19,12 @@ a = a - b = 8 - 5 = 3
 (swappe without using third variable)
 ```
 
+### Set
+
+add elements to a set using set operations
+
+`unionInPlace(_:)`
+
 ### Class, struct, enum using subscript for set and get value
 
 ```
