@@ -6,7 +6,5 @@ last two item: list\[-2:\]
 
 everything before the last two item: list\[:-2\]
 
-
-
-
+all item in arr reversed: list\[::-1\]
 
