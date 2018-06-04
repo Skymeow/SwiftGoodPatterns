@@ -48,7 +48,11 @@ openfunc replaceCurrentItem\(with item: AVPlayerItem?\)
 
 ### sticky scrolling offset collection view:
 
-https://stackoverflow.com/questions/13492037/targetcontentoffsetforproposedcontentoffsetwithscrollingvelocity-without-subcla
+[https://stackoverflow.com/questions/13492037/targetcontentoffsetforproposedcontentoffsetwithscrollingvelocity-without-subcla](https://stackoverflow.com/questions/13492037/targetcontentoffsetforproposedcontentoffsetwithscrollingvelocity-without-subcla)
+
+### tableview hightlight cell;
+
+https://stackoverflow.com/questions/45651816/animate-cell-when-pressed-using-swift-3
 
 
 
