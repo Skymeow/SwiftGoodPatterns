@@ -52,7 +52,11 @@ openfunc replaceCurrentItem\(with item: AVPlayerItem?\)
 
 ### tableview hightlight cell;
 
-https://stackoverflow.com/questions/45651816/animate-cell-when-pressed-using-swift-3
+[https://stackoverflow.com/questions/45651816/animate-cell-when-pressed-using-swift-3](https://stackoverflow.com/questions/45651816/animate-cell-when-pressed-using-swift-3)
+
+### indexpath.item & indexpath.row
+
+using "row" in the context of tables, and "item" in the context of collections.
 
 
 
