@@ -58,5 +58,9 @@ openfunc replaceCurrentItem\(with item: AVPlayerItem?\)
 
 using "row" in the context of tables, and "item" in the context of collections.
 
+### bring tableview to certain cell \(sticky view\)
+
+tableView.scrollToRow\(at: indexPath, at: .top, animated: true\)
+
 
 
