@@ -19,6 +19,13 @@ a = a - b = 8 - 5 = 3
 (swappe without using third variable)
 ```
 
+### String:
+
+```
+Check prefix: guard self.hasPrefix(prefix) else { return self }
+        return String(self.dropFirst(prefix.count))
+```
+
 ### Set
 
 add elements to a set using set operations
