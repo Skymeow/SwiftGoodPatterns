@@ -545,5 +545,28 @@ return
 >
 > **5. Custom**- You may implement your own custom segue and have complete control over its appearance and transition.
 
+### Coding challenges
+
+```
+//1. recursively flatten a nested array
+//var list = [3, 4, [4, [[55]]]] as [Any]
+//
+//func flatten(arr: [Any]) -> [Any] {
+//    var final = [Any]()
+//    for i in arr {
+//        if let num = i as? Int {
+//            final.append(num)
+//        } else if let numArr = i as? [Any] {
+//            let flatList = flatten(arr: numArr)
+//            final += flatList
+//        }
+//    }
+//    return final
+//}
+//
+//let e = flatten(arr: list)
+
+```
+
 
 
