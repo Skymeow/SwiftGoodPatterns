@@ -569,19 +569,19 @@ return
 
 ### Swift Copy on write \( how swift prioritize value type permamamce\)
 
-two value just sharing the same instance until one of them changes
+two value just sharing the same instance until one of them changes, value will be copied only upon mutation
 
 ```
 var array1 = [1, 2, 3, 4]
- 
+
 address(of: array1)     // 0x60000006e420
- 
+
 var array2 = array1
- 
+
 address(of: array2)     // 0x60000006e420
- 
+
 array1.append(2)
- 
+
 address(of: array1)     // 0x6080000a88a0
 address(of: array2)     // 0x60000006e420
 ```
