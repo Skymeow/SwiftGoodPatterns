@@ -17,4 +17,5 @@
 * [What I learned from making HypeCam\(video + audio processing\)](what-i-learned-from-making-hypecamvideo-+-audio-processing.md)
 * [graphQL](graphql.md)
 * [Swift web scraping](swift-web-scraping.md)
+* [Swift data analytics project](swift-data-analytics-project.md)
 
