@@ -598,13 +598,14 @@ use concurrent queue sync for read
 
 **write**
 
+\(dispatch the write operation asynchronously with a barrier. When it executes, it will be the only item in your queue.\)
+
 ```
 func addPhoto(_ photo: Photo) {
   concurrentPhotoQueue.async(flags: .barrier) { // 1
     self._photos.append(photo) // 2
   }
 }
-
 ```
 
 **read**
@@ -619,7 +620,6 @@ var photos: [Photo] {
   }
   return photosCopy
 }
-
 ```
 
 
