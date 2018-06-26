@@ -586,5 +586,5 @@ address(of: array1)     // 0x6080000a88a0
 address(of: array2)     // 0x60000006e420
 ```
 
-
+https://medium.com/@lucianoalmeida1/understanding-swift-copy-on-write-mechanisms-52ac31d68f2f
 
