@@ -586,5 +586,41 @@ address(of: array1)     // 0x6080000a88a0
 address(of: array2)     // 0x60000006e420
 ```
 
-https://medium.com/@lucianoalmeida1/understanding-swift-copy-on-write-mechanisms-52ac31d68f2f
+[https://medium.com/@lucianoalmeida1/understanding-swift-copy-on-write-mechanisms-52ac31d68f2f](https://medium.com/@lucianoalmeida1/understanding-swift-copy-on-write-mechanisms-52ac31d68f2f)
+
+### Swift handling race condition
+
+#### read and write to same resource issue:
+
+use customized concurrent queue with barrier for write\(append method\)
+
+use concurrent queue sync for read
+
+**write**
+
+```
+func addPhoto(_ photo: Photo) {
+  concurrentPhotoQueue.async(flags: .barrier) { // 1
+    self._photos.append(photo) // 2
+  }
+}
+
+```
+
+**read**
+
+\(dispatch syncly on read\)
+
+```
+var photos: [Photo] {
+  var photosCopy: [Photo]!
+  concurrentPhotoQueue.sync { // 1
+    photosCopy = self._photos // 2
+  }
+  return photosCopy
+}
+
+```
+
+
 
