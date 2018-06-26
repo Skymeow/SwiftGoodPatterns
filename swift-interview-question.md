@@ -622,5 +622,9 @@ var photos: [Photo] {
 }
 ```
 
+### Swift 4.1 new feature
+
+https://www.hackingwithswift.com/articles/50/whats-new-in-swift-4-1
+
 
 
