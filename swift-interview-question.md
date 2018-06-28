@@ -640,7 +640,7 @@ func asyncPrint(queue: DispatchQueue, symbol: String, firstResource: String, fir
     print("\(symbol) waiting resource \(resource)")
     semaphore.wait()  // requesting the resource
   }
-  
+
   queue.async {
     requestResource(firstResource, with: firstSemaphore)
     for i in 0...10 {
@@ -649,7 +649,7 @@ func asyncPrint(queue: DispatchQueue, symbol: String, firstResource: String, fir
       }
       print(symbol, i)
     }
-    
+
     print("\(symbol) releasing resources")
     firstSemaphore.signal() // releasing first resource
     secondSemaphore.signal() // releasing second resource
@@ -658,8 +658,11 @@ func asyncPrint(queue: DispatchQueue, symbol: String, firstResource: String, fir
 
 asyncPrint(queue: higherPriority, symbol: "🔴", firstResource: "A", firstSemaphore: semaphoreA, secondResource: "B", secondSemaphore: semaphoreB)
 asyncPrint(queue: lowerPriority, symbol: "🔵", firstResource: "B", firstSemaphore: semaphoreB, secondResource: "A", secondSemaphore: semaphoreA)
-
 ```
+
+### Difference between protocol and extension
+
+https://stackoverflow.com/questions/30859411/what-is-the-difference-between-protocol-extension-and-category-in-ios-developme
 
 
 
