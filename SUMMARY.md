@@ -18,4 +18,5 @@
 * [graphQL](graphql.md)
 * [Swift web scraping](swift-web-scraping.md)
 * [Swift data analytics project](swift-data-analytics-project.md)
+* [linux command line](linux-command-line.md)
 
