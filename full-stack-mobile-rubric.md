@@ -94,6 +94,43 @@ Encapsulation is an object-oriented design principle and hides the internal stat
 
 \(protocol without subclassing\)
 
+```
+protocol Food {
+    func goneBad()
+}
+
+protocol Animal {
+    associatedtype food: Food
+    func eat(food: Food)
+    //    can only use var and {get} in protocol
+    var legs: Int? { get set }
+    init(legs: Int)
+}
+
+struct Grass: Food {
+    func goneBad() {
+        print("bad")
+    }
+}
+
+struct Cat {
+    let cureness = true
+    var legs: Int?
+    init(legs: Int) {
+        self.legs = legs
+    }
+}
+
+extension Cat: Animal {
+    func eat(food: Food) {
+        print("eat")
+    }
+    
+    typealias food = Grass
+}
+
+```
+
 ### Any & Anyobject
 
 ANY can represent an instance of any type at all, including function types and optional types.
