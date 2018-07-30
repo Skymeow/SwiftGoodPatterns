@@ -68,5 +68,11 @@ tableView.scrollToRow\(at: indexPath, at: .top, animated: true\)
 
 ### coreanimation
 
-https://www.raywenderlich.com/162315/core-graphics-tutorial-part-1-getting-started
+[https://www.raywenderlich.com/162315/core-graphics-tutorial-part-1-getting-started](https://www.raywenderlich.com/162315/core-graphics-tutorial-part-1-getting-started)
+
+### Multi cell type
+
+https://medium.com/@stasost/ios-how-to-build-a-table-view-with-multiple-cell-types-2df91a206429
+
+
 
