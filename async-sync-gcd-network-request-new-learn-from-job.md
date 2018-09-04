@@ -23,3 +23,7 @@ func fetchEvents() {
 
 
 
+
+
+ UI action closure don't need capture list, UI action all on main thread
+
