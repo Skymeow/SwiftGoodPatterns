@@ -72,7 +72,32 @@ tableView.scrollToRow\(at: indexPath, at: .top, animated: true\)
 
 ### Multi cell type
 
-https://medium.com/@stasost/ios-how-to-build-a-table-view-with-multiple-cell-types-2df91a206429
+[https://medium.com/@stasost/ios-how-to-build-a-table-view-with-multiple-cell-types-2df91a206429](https://medium.com/@stasost/ios-how-to-build-a-table-view-with-multiple-cell-types-2df91a206429)
+
+
+
+### pop up modal reposition + resize
+
+```
+       navigationController.modalPresentationStyle = .popover
+        navigationController.preferredContentSize = Constants.reportCommentViewPreferredContentSize
+        mapViewController.present(navigationController, animated: true, completion: nil)
+        guard let popoverPresentationController = navigationController.popoverPresentationController else { return }
+        popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirection.init(rawValue: 0)
+        popoverPresentationController.sourceView = mapViewController.view
+        popoverPresentationController.sourceRect = CGRect(origin: Constants.reportCommentViewPoint, size: CGSize(width: mapViewController.view.bounds.width, height: mapViewController.view.bounds.height * 0.3))
+```
+
+### coregraphic rendering
+
+```
+let renderer = UIGraphicsImageRenderer(size: CGSize(width: Constants.cellImageFrame.width, height: Constants.cellImageFrame.height))
+            let image = renderer.image { (rendererContext) in
+                UIColor.green.setFill()
+                rendererContext.fill(Constants.cellImageFrame) }
+
+
+```
 
 
 
