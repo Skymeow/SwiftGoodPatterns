@@ -13,7 +13,7 @@
 * [Full stack mobile rubric](full-stack-mobile-rubric.md)
 * [solo project stack tech blockers](solo-project-stack-tech-blockers.md)
 * [blockchain and swift](blockchain-and-swift.md)
-* [Persistent store and coredata](persistent-store-and-coredata.md)
+* [Persistent store + Filemanager](persistent-store-and-coredata.md)
 * [What I learned from making HypeCam\(video + audio processing\)](what-i-learned-from-making-hypecamvideo-+-audio-processing.md)
 * [graphQL](graphql.md)
 * [Swift web scraping](swift-web-scraping.md)
