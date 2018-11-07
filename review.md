@@ -3,9 +3,9 @@
 How to set rootViewController to mainViewController
 
 ```
-let previousRootViewController = self.window?.rootViewController
-  self.window?.rootViewController = viewController		              
-  self.window?.makeKeyAndVisible()		             
+  let previousRootViewController = self.window?.rootViewController
+  self.window?.rootViewController = viewController                      
+  self.window?.makeKeyAndVisible()                     
   previousRootViewController?.dismiss(animated: false, completion: nil)
 ```
 
