@@ -22,4 +22,5 @@
 * [Async sync, GCD, Network request, new learn from job](async-sync-gcd-network-request-new-learn-from-job.md)
 * [Swift Tool + extension](swift-tool-+-extension.md)
 * [new thoughts on UI](review.md)
+* [Accessibility](accessibility.md)
 
