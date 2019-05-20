@@ -26,4 +26,5 @@ func fetchEvents() {
 
 
  UI action closure don't need capture list, UI action all on main thread
-
+dispatchQueue = DispatchQueue(kind: .serial, label: "serial queue")
+If you want to write something to the same resource you are reading, use self.dispatchQueue.sync{ partys.append(parties) }
