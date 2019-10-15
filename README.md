@@ -279,6 +279,14 @@ The Xcode memory graph debugger helps to find and fix to retain cycles and leake
 
 ![](/assets/debug panels.png)
 
+#### 3. use instruments
+
+Apple provides great tools along with the Xcode to profile the application for finding the memory leaks and other great bug detection tools. Today I will guide you through small sample demo how you can detect the leaks in the application.
+
+[https://www.surekhatech.com/blog/find-memory-leaks-in-ios-apps-with-xcode-instruments/](https://www.surekhatech.com/blog/find-memory-leaks-in-ios-apps-with-xcode-instruments)
+
+
+
 ### [applicationWillEnterForeground\(\_:\)](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623076-applicationwillenterforeground)
 
 ### NSOperation
